@@ -1,3 +1,6 @@
+## base_crawl_class
+
+
 说明：
 1. mySpider.py为本人写的一个爬虫类，其他新的爬虫类继承后可以重用里面的一些方法
 	1. 包括随机获取代理（调用了自己写的MyProxy类），随机获取UserAgent（调用了自己写的MyUserAgent）

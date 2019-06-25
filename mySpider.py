@@ -103,13 +103,15 @@ class MySpider:
         return r_list
     
     def writeHtml(self,content,filename=None):
+        print("start to write content...")
         self.filename=filename
         if not self.filename:
-            self.filename=os.path.abspath(0)+".txt"
+            self.filename=os.path.abspath(".")+".txt"
         else:
             self.filename="../"+self.filename
         with open(self.filename,"ab") as f:
             f.write(content)
+        print("Write content finished.")
         
     
     def getList(self,url,pattern):

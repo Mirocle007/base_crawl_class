@@ -32,7 +32,7 @@ if __name__=="__main__":
             url="http:"+r[:-5]+"_"+str(page)+".html"
             html2=spider.getHtml(url)
             r_list2=spider.parseHtml(html2,method="xpath",pattern=pattern2)
-            spider.writeHtml(r_list2,filename="name.txt")
+            spider.writeHtml(r_list2,filename="../name.txt")
         print("下载完成"+r)
 
         
