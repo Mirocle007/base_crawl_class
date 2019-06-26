@@ -77,6 +77,9 @@ class MySpider:
                 if num_tries==0:
                     print("重定向失败："+e.code)
                     return
+            else:
+                print(e)
+                return
         except ConnectionError:
             raise ConnectionError("连接主机失败。")
         except Exception as e:
@@ -107,6 +110,8 @@ class MySpider:
         self.filename=filename
         if not self.filename:
             self.filename=os.path.abspath(".")+".txt"
+        elif "/" in filename:
+            self.filename = self.filename
         else:
             self.filename="../"+self.filename
         with open(self.filename,"ab") as f:
