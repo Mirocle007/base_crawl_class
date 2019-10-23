@@ -124,6 +124,7 @@ dmypy.json
 .vscode
 
 # global static folder
+data/
 static/
 !*/static/
 

@@ -9,4 +9,3 @@
 2. myproxy.py为本人写的一个自动获取代理IP的爬虫文件，能够检测有无proxy.txt（包括了代理IP的文件），如果没有，则爬取最新的代理IP，并用于爬虫类
 3. myUserAgent.py为从useragent自动获取一个随机的useragent
 4. demo简单演示了如何使用mySpider.py进行爬虫
- 
