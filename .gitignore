@@ -130,3 +130,5 @@ static/
 
 # pre-train model
 *.pth
+*.bak
+proxy.txt
