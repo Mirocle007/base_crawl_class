@@ -123,12 +123,6 @@ dmypy.json
 .idea
 .vscode
 
-# global static folder
-data/
-static/
-!*/static/
-
-# pre-train model
-*.pth
-*.bak
 proxy.txt
+*bak
+
